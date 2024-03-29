@@ -1,25 +1,25 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
     return (
       
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" id="Home">Peliculas</a>
+        <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div className="container-fluid">
+                <NavLink className="navbar-brand" exact to='/' id="Home">Peliculas</NavLink>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="2">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="2">
 
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Generos</a>
-                        <a class="nav-link" href="#">Directores</a>
-                        <a class="nav-link" href="#">Productoras</a>
-                        <a class="nav-link" aria-disabled="true" href="#">Tipo</a>
-                        <a class="nav-link" href="#">Media</a>
+                    <div className="navbar-nav">
+                        <NavLink className="nav-link" activeClassName='active' exact to='/generos' aria-current="page" >Generos</NavLink>
+                        <NavLink className="nav-link" activeClassName='active' exact to='/directores'>Directores</NavLink>
+                        <NavLink className="nav-link" activeClassName='active' exact to='/productoras'>Productoras</NavLink>
+                        <NavLink className="nav-link" activeClassName='active' exact to='/tipos'>Tipo</NavLink>
                     </div>
                 </div>
             </div>
