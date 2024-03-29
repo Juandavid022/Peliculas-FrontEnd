@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header} from './components/ui/Header'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {MediaView} from './components/media/MediaView'
 
 const App =() => {
@@ -9,7 +9,6 @@ const App =() => {
     <Header/>
     <Switch>
           <Route exact path="/" component = { MediaView }></Route>
-            <About />
 
 
     </Switch>
