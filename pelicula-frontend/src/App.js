@@ -15,10 +15,10 @@ const App =() => {
     <Header/>
     <Switch>
           <Route exact path="/" component = { MediaView }></Route>
-          <Route exact path="/genero" component = { GeneroView }></Route>
-          <Route exact path="/productora" component = { ProductoraView }></Route>
-          <Route exact path="/tipo" component = { TipoView }></Route>
-          <Route exact path="/director" component = { DirectorView }></Route>
+          <Route exact path="/generos" component = { GeneroView }></Route>
+          <Route exact path="/productoras" component = { ProductoraView }></Route>
+          <Route exact path="/tipos" component = { TipoView }></Route>
+          <Route exact path="/directores" component = { DirectorView }></Route>
           <Redirect exact path="/" component = { MediaView }/>
 
 
