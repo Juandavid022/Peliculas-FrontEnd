@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 export const MediaCard = (props) => {
 
@@ -7,11 +8,18 @@ export const MediaCard = (props) => {
     return (
 
         <div className="col">
+            <br />
             <div className="card">
-                <img src="1" className="card-img-top" alt="..." />
+                <img src={media.imagen} className="card-img-top" alt="Image" />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 className="card-title">{media.titulo}</h5>
+                    <hr />
+                    <p className="card-text" id='sinopsis'>{`Sinopsis: ${media.sinopsis}`} </p>
+                    <p className="card-text" id='aEstreno'>{`Año Estreno: ${media.anioEstreno}`} </p>
+                    <p className="card-text" id='link'>
+                        <Link> Ver más...</Link>
+                     </p>
+
                 </div>
             </div>
         </div>
