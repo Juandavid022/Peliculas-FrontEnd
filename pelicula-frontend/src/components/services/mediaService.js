@@ -1,11 +1,12 @@
 import {axiosInstance} from '../../helper/axios-config'
 
-const ObtenerMedia = () => {
-    return axiosInstance.get('/media',
+const ObtenerMedias = async () => { 
+    return axiosInstance.get('media',
     {headers: {
         'Content-Type':'application/json'
     }})
 }
+
 
 const CrearMedia = (data) => {
     return axiosInstance.post('/media',data,
@@ -32,5 +33,5 @@ export  {
     CrearMedia,
     ActualizarMedia,
     EliminarMedia,
-    ObtenerMedia,
+    ObtenerMedias,
 }
