@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom';
+import { } from '../media/MediaUpdate'
 
 export const MediaCard = (props) => {
 
@@ -16,9 +17,9 @@ export const MediaCard = (props) => {
                     <hr />
                     <p className="card-text" id='sinopsis'>{`Sinopsis: ${media.sinopsis}`} </p>
                     <p className="card-text" id='aEstreno'>{`Año Estreno: ${media.anioEstreno}`} </p>
-                    <p className="card-text" id='link'>
-                        <Link> Ver más...</Link>
-                     </p>
+                    <p className="card-link" id='link'>
+                        <Link to={`media/edit/${media._id}`}> Ver más...</Link>
+                    </p>
 
                 </div>
             </div>

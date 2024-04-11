@@ -4,6 +4,7 @@ import { MediaCard } from './MediaCard'
 import { MediaNew } from './MediaNew'
 
 
+
 export const MediaView = () => {
 
   const [medias, setMedia] = useState([]);

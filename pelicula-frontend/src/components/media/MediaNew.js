@@ -98,11 +98,11 @@ export const MediaNew = ({ handleOpenModal , listarMedia}) => {
             const  data  =await CrearMedia(media)
             handleOpenModal()
             listarMedia()  
-            Swal.close()
+           // Swal.close()
 
         } catch (error) {
             console.log('error :>> ', error);
-            Swal.close();
+            //Swal.close();
         }
     }
 
