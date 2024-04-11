@@ -20,11 +20,7 @@ const App =() => {
           <Route exact path="/tipos" component = { TipoView }></Route>
           <Route exact path="/directores" component = { DirectorView }></Route>
           <Redirect exact path="/" component = { MediaView }/>
-
-
-
     </Switch>
-
     </Router>    
   
   )

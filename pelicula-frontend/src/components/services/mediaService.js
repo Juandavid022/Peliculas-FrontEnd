@@ -9,21 +9,21 @@ const ObtenerMedias = async () => {
 
 
 const CrearMedia = (data) => {
-    return axiosInstance.post('/media',data,
+    return axiosInstance.post('media',data,
     {headers: {
         'Content-Type':'application/json'
     }})
 }
 
 const EliminarMedia = (id,data) => {
-    return axiosInstance.delete(`/media/${id}`,data,
+    return axiosInstance.delete(`media/${id}`,data,
     {headers: {
         'Content-Type':'application/json'
     }})
 }
 
 const ActualizarMedia = (id,data) => {
-    return axiosInstance.put(`/media/${id}`,data,
+    return axiosInstance.put(`media/${id}`,data,
     {headers: {
         'Content-Type':'application/json'
     }})
