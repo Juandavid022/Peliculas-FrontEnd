@@ -8,9 +8,9 @@ export const MediaCard = (props) => {
 
     return (
 
-        <div className="col">
+        <div >
             <br />
-            <div className="card">
+            <div className="card card-responsive">
                 <img src={media.imagen} className="card-img-top" alt="Image" />
                 <div className="card-body">
                     <h5 className="card-title">{media.titulo}</h5>
