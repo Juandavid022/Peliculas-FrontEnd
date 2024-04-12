@@ -43,3 +43,24 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.card-body {
+    width: 50%; 
+    height: 0; 
+    padding-bottom: 50%; 
+}
+
+.card-genero {
+    width: 50%; 
+    height: 0; 
+    padding-bottom: 50%; 
+    
+}
+
+.table{
+
+    table-layout: fixed;
+
+    justify-content: space-between;
+
+}

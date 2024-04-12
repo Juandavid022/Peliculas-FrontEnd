@@ -29,9 +29,17 @@ const ActualizarMedia = (id,data) => {
     }})
 }
 
+const GetMediaId = (mediaId) => {
+    return axiosInstance.get(`media/${mediaId}`,
+    {headers: {
+        'Content-Type':'application/json'
+    }})
+}
+
 export  {
     CrearMedia,
     ActualizarMedia,
     EliminarMedia,
     ObtenerMedias,
+    GetMediaId
 }

@@ -5,9 +5,8 @@ import { ObtenerGenero } from '../services/generoService'
 import { ObtenerProductora } from '../services/productoraService'
 import { ObtenerDirectores } from '../services/directoresService'
 import Swal from 'sweetalert2'
-
 import {CrearMedia} from '../services/mediaService'
-import {lis} from '../media/MediaView'
+
 
 
 export const MediaNew = ({ handleOpenModal , listarMedia}) => {
@@ -98,11 +97,11 @@ export const MediaNew = ({ handleOpenModal , listarMedia}) => {
             const  data  =await CrearMedia(media)
             handleOpenModal()
             listarMedia()  
-           // Swal.close()
+            Swal.close()
 
         } catch (error) {
             console.log('error :>> ', error);
-            //Swal.close();
+            Swal.close();
         }
     }
 

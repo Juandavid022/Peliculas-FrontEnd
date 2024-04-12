@@ -1,6 +1,6 @@
 import {axiosInstance} from '../../helper/axios-config'
 
-const ObtenerGenero = () => {
+const ObtenerGenero = async () => {
     return axiosInstance.get('genero',
     {headers: {
         'Content-Type':'application/json'
