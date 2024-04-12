@@ -6,11 +6,18 @@ export const GeneroCard = (props) => {
 
     return (
         <div >
-            <table className="table table- table-hover">
+            <table className="table table-responsive">
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr>                        
+                    <tr>
                         <td>{genero.nombre}</td>
-                        <tr>{genero.estado}</tr>
+                        <td>{genero.descripcion}</td>
                     </tr>
                 </tbody>
             </table>

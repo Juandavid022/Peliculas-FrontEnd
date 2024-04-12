@@ -79,15 +79,14 @@ export const GeneroView = () => {
 
   return (
     <div className='container-fluid '>
-      <div className="card">
-        <div className='card-header'>
-          <h5 className='card-title'> Generos</h5>
+
+
           <div className='row'>
             <hr />
           </div>
           <div className='col'>
-            <form >
               <div className='row'>
+                
                 <div className="mb-3" >
                   {
                     genero.map((genero) => {
@@ -96,11 +95,11 @@ export const GeneroView = () => {
                   }
                 </div>
               </div>
-            </form>
+
           </div>
         </div>
-      </div>
-    </div>
+
+
 
   )
 }

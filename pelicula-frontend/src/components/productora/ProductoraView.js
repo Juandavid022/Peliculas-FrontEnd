@@ -75,29 +75,25 @@ export const ProductoraView = () => {
 
 
   return (
-    <div className='container-fluid '>
-      <div className="card">
-        <div className='card-header'>
-          <h5 className='card-title'> Productora</h5>
-          <div className='row'>
-            <hr />
-          </div>
-          <div className='col'>
-            <form >
-              <div className='row'>
-                <div className="mb-3" >
-                  {
-                    productora.map((productora) => {
-                      return <ProductoraCard key={productora._id} productora={productora} />
-                    })
-                  }
-                </div>
-              </div>
-            </form>
-          </div>
+    <div className="container-sm">
+        <div className='row'>
+          <hr />
         </div>
-      </div>
-    </div>
+        <div class="row-3">
+          
+          <div className='row row-cols-2 row-cols-md-3 '>
+
+            {
+              productora.map((productora) => {
+                return <ProductoraCard key={productora._id} productora={productora} />
+              })
+            }
+
+          </div>
+
+        </div>
+
+        </div>
 
   )
 }
